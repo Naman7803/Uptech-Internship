@@ -1,9 +1,16 @@
 *{
     margin: 0%;
     padding: 0%;
-    background-color: aqua;
 }
 
-.heading h1 {
+.heading {
     color: blue;
+    padding: 2px;
+    margin: 5px;
+}
+
+p{
+    color: red;
+    font-style: italic;
+    margin: 5px;
 }

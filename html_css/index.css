@@ -72,3 +72,10 @@ tr:hover{
     border-radius: 10px;
     cursor: pointer;
 }
+
+
+.form{
+    align-items: center;
+    padding: 25px;
+    margin: 20px;
+}

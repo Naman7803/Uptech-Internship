@@ -31,7 +31,6 @@
     text-decoration: none;
     color: #4B5563;
     font-size: 16px;
-    
     font-weight: 500;
     font-family: "inter";
 }
@@ -141,7 +140,6 @@
 }
 
 .links{
-    width: 768px;
     height: 36px;
     gap: 16px;
     display: flex;
@@ -178,7 +176,275 @@
 
 
 .about{
-    justify-content: space-between;
     padding: 96px 80px 96px 80px;
     background-color: #F9FAFB;
+}
+
+.about-me{
+    height: 770px;
+    padding: 0px 32px 0px;
+    gap: 48px;
+}
+
+.about-header{
+    padding: 4px 20px;
+    background-color: #E5E7EB;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-info{
+    display: flex;
+}
+
+.column3{
+    width: 584px;
+    height: 694px;
+}
+
+.column3 img{
+    width: 440px;
+    height: 520px;
+    box-shadow: -50px 50px #E5E7EB;
+    
+}
+
+.column4{
+    width: 584px;
+    height: 694px;
+}
+
+.column4 h1{
+    width: 503px;
+    height: 36px;
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -2%;
+    color: #111827;
+}
+
+
+.column4 p{
+    width: 584px;
+    height: 120px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}
+
+
+.skills{
+    padding: 96px 80px;
+    background-color: #FFFFFF;
+}
+
+.skill-info{
+    padding: 0px 32px 0px;
+}
+
+.skills-header{
+    padding: 4px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.skill-title{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.data{
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.data img{
+    width: 64px;
+    height: 64px;
+}
+
+
+.experience{
+    padding: 96px 80px;
+}
+
+.experience-info{
+    padding: 0px 32px 0px;
+}
+
+.experience-header{
+    padding: 4px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.experience-title{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-data{
+    width: 896px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.6); */
+}
+
+.experience-sub-data{
+    width: 832px;
+    height: 250px;
+    display: flex;
+    gap: 48px;
+    margin-top: 32px;
+}
+
+.experience-col-1{
+    width: 206px;
+    height: 28px;
+}
+
+.experience-col-1 img{
+    width: 102px;
+    height: 28px;
+}
+
+.experience-col-2{
+    width: 384px;
+    height: 28px;
+
+}
+
+.experience-col-2 p{
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #111827;
+}
+
+.experience-col-2 ul li{
+    
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}
+
+
+.experience-col-3{
+    width: 146px;
+    height: 24px;
+}
+
+.experience-col-3 p{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #374151;
+    text-align: right;
+}
+
+
+.work{
+    padding: 96px 80px;
+    background-color: #FFFFFF;
+}
+
+.work-info{
+    padding: 0px 32px 0px;
+}
+
+.work-header{
+    padding: 4px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.work-title{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.work-data{
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+}
+
+.work-col-1{
+    width: 576px;
+    height: 480px;
+    
+}
+
+.work-col-1 img{
+    width: 480px;
+    height: 384px;
+    border-radius: 12px;
+}
+
+.work-col-2{
+    width: 576px;
+    height: 480px;  
+}
+
+.work-col-2 h1{
+    width: 480px;
+    height: 28px;
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #111827;
+}
+
+.work-col-2 p{
+    width: 480px;
+    height: 96px;
+    padding-top: 20px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4B5563  ;
+}
+
+.work-col-2 img{
+    border-radius: 8px;
+    padding-top: 20px;
+    cursor: pointer;
 }

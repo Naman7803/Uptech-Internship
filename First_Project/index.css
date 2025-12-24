@@ -530,3 +530,150 @@
 .getintouch-info{
     padding: 0px 32px 0px;
 }
+
+.getintouch-header{
+    padding: 4px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.getintouch-title{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.getintouch-data{
+    width: 596px;
+    height: 104px;
+    gap: 16px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.getintouch-email{
+    width: 596px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.getintouch-email img{
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+}
+
+.getintouch-email p{
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    color: #111827;
+}
+
+
+.getintouch-phone{
+    width: 596px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.getintouch-phone img{
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+}
+
+.getintouch-phone p{
+    width: 300px;
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    color: #111827;
+}
+
+.getintouch-other{
+    width: 312px;
+    height: 68px;
+    margin: auto;
+}
+
+.getintouch-other p{
+    height: 24px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}
+
+.getintouch-other-links{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.getintouch-other-links button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+}
+
+.getintouch-other-links button img{
+    width: 24px;
+    height: 24px;
+    size: 24px;
+}
+
+footer{
+    padding: 24px 80px;
+    background-color: #F9FAFB;
+}
+
+.footer{
+    padding: 0px 32px 0px;
+}
+
+.footer-data{
+    width: 370px;
+    height: 20px;
+    display: flex;
+    gap: 8px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-data img{
+    width: 16px;
+    height: 16px;
+}
+
+.footer-data p{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}

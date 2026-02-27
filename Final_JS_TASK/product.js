@@ -1,9 +1,6 @@
 // // single product view
-const productview=document.getElementById("product-view");
-// window.location.href = `product.html?id=${id}`;
-    // const params = new URLSearchParams(window.location.search); 
-    // const id =params.get("id"); 
-    // console.log(id)
+
+const productview = document.getElementById("product-view");
 
 function getProductId(id) {
     window.location.href = `product.html?id=${id}`;
@@ -20,14 +17,14 @@ async function getProduct() {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
-        const data=await response.json();
+        const data = await response.json();
         // console.log(data)
         // const products=data;
         console.log(data)
         console.log(id)
         // productview.innerHTML = data.map(d =>(
-            productview.innerHTML =
-            `<div class="border border-[#ECECEC] rounded-xl">
+        productview.innerHTML =
+            `<div class="max-w-sm border border-[#ECECEC] rounded-xl">
                             <img src="${data.images[0]}" alt="product">
                         </div>
                         <div class="items-center">
@@ -46,7 +43,7 @@ async function getProduct() {
                                     class="font-semibold text-[#7E7E7E] text-xs">Weight:</span><span
                                     class="text-[#7E7E7E] text-xs">${data.weight}</span></p>
                             <div class="flex items-center gap-2 mt-5">
-                                <input type="number" class="outline-2 outline-[#3BB77E] rounded-sm px-2 py-2">
+                                <input id="product-qty" type="number" class="outline-2 outline-[#3BB77E] rounded-sm px-2 py-2">
                                 <button onclick="addtocart(${data.id})"
                                     class="bg-[#3BB77E] justify-center items-center px-2 py-2.5 flex rounded-sm font-bold text-white cursor-pointer">
                                     <span class="py-1 mx-1"><img src="assets/addtocart.svg"></span><span class="mx-1 text-sm">Add to

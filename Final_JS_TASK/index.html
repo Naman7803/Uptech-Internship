@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Home</title>
 </head>
 <body>
+    <div id="loader" class="flex-col gap-4 w-full flex items-center h-screen hidden justify-center">
+        <div
+            class="w-28 h-28 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full">
+            <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" class="animate-ping">
+                <path
+                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z">
+                </path>
+            </svg>
+        </div>
+    </div>
     <div class="mx-auto max-w-7xl px-4 py-4">
 
         <div class="flex justify-between items-center gap-4">
@@ -38,7 +50,7 @@
                     <span class="inline"><img src="assets/whishlist.svg"></span><span class="inline">Wishlist</span>
                 </div>
                 <div class="text-gray-400 flex items-center gap-1">
-                    <span class="inline"><img src="assets/cart.svg"></span><span class="inline"><a class="cursor-pointer" href="cart.html">Cart</a></span>
+                    <span class="inline"><a class="cursor-pointer" href="cart.html"><img src="assets/cart.svg"></span><span class="inline">Cart</span></a>
                 </div>
                 <div class="text-gray-400 flex items-center gap-1">
                     <span class="inline"><img src="assets/account.svg"></span><span class="inline">Account</span>
@@ -58,7 +70,7 @@
                     Categories</button>
             </div>
             <div class="flex items-center gap-1">
-                <span class="inline"><img src="assets/hotdeals.svg"></span><span class="font-bold inline">Hot Deals</span>
+                <img src="assets/hotdeals.svg"><span class="font-bold">Hot Deals</span>
             </div>
     
             <ul class="flex gap-5 font-bold">
@@ -74,7 +86,7 @@
     
         </div>
         <div class="flex items-center gap-2">
-            <span><img src="assets/support.svg"></span>
+            <img src="assets/support.svg">
             <div class="flex flex-col">
                 <span class=" text-green-600 font-bold text-2xl">1900888123</span>
                 <span class="text-xs text-gray-500 font-normal">24/7 Support Center</span>
@@ -98,9 +110,9 @@
 
     <div class="mx-auto max-w-7xl px-4 py-4">
         <div class="flex justify-between px-2">
-            <div class="text-2xl font-bold items-center">
+            <h2 class="text-2xl font-bold items-center">
                 Featured Categories
-            </div>
+            </h2>
             <div class="flex items-center">
                 <button onclick="backward()"  id="backbtn"><img class="bg-gray-100 mx-1 rounded-full cursor-pointer" src="assets/backward.svg"></button>
                 <button onclick="forward()" id="forwardbtn"><img class="bg-gray-100 mx-1 rounded-full cursor-pointer" src="assets/forward.svg"></button>
@@ -115,9 +127,9 @@
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="flex gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div class="relative">
-                <img class="w-full" src="assets/baner-1.png" alt="baner">
+                <img class="w-full h-full object-contain" src="assets/baner-1.png" alt="baner">
                 <div class="absolute inset-0 flex items-center">
                     <div class="p-4">
                         <h2 class="font-bold text-xl w-[220px] items-center justify-center mb-5">Everyday Fresh & Clean with Our Products</h2>
@@ -128,7 +140,7 @@
             
 
             <div class="relative">
-                <img class="w-full" src="assets/baner-2.png" alt="baner">
+                <img class="w-full h-full object-contain" src="assets/baner-2.png" alt="baner">
                 <div class="absolute  inset-0 flex items-center">
                     <div class="items-center p-4">
                         <h2 class="font-bold text-xl w-[220px] items-center justify-center mb-5">Make your Breakfast Healthy and Easy</h2>
@@ -138,7 +150,7 @@
             </div>
 
             <div class="relative">
-                <img class="w-full" src="assets/baner-3.png" alt="baner">
+                <img class="w-full h-full object-contain" src="assets/baner-3.png" alt="baner">
                 <div class="absolute inset-0 flex items-center">
                     <div class="items-center p-4">
                         <h2 class="font-bold text-xl w-[220px] items-center justify-center mb-5">The best Organic Products Online</h2>
@@ -151,11 +163,11 @@
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="text-2xl font-bold items-center">
+        <h2 class="text-2xl font-bold items-center">
             Popular Products
-        </div>
+        </h2>
     
-        <div id="product-list" class="grid grid-cols-5 px-2 py-2">
+        <div id="product-list" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-2 py-2">
             <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
                 <img class="w-full px-2 py-2 items-center justify-center" src="" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
@@ -197,7 +209,7 @@
     
         <div class="flex flex-col lg:flex-row mt-4 gap-6">
             <div class="relative w-full lg:w-1/3 py-2 shrink-0">
-                <img class="w-full h-full" src="assets/baner-4.png" alt="baner">
+                <img class="w-full h-[500px] rounded-xl object-cover" src="assets/baner-4.png" alt="baner">
                 <div class="absolute inset-0 mx-10 my-10 pt-10">
                     <div class="pt-10">
                         <h2 class="font-bold text-3xl w-[220px] text-left mb-10">Bring nature into your home</h2>
@@ -205,8 +217,8 @@
                     </div>
                 </div>
             </div>
-            <div id="product-list-1" class="flex flex-1 overflow-hidden gap-6 scroll-smooth">
-                <div class="max-w-sm rounded mx-3">
+            <div id="product-list-1" class="flex flex-1 overflow-hidden h-[500px] gap-6 scroll-smooth">
+                <!-- <div class="max-w-sm rounded mx-3">
                     <div class="h-40 flex items-center justify-center overflow-hidden">
                         <img class="h-full object-contain" src="">
                     </div>
@@ -232,44 +244,44 @@
                                     cart</span></button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="text-2xl font-bold items-center py-2">
+        <h2 class="text-2xl font-bold items-center py-2">
             Deals Of The Day
-        </div>
-        <div class="flex py-2 mt-3">
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-2 mt-3 gap-5">
 
-            <div class="px-2 relative h-[445px]">
-                <img class="w-[380px] h-[335px]" src="assets/baner-5.png">
+            <div class="relative ">
+                <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-5.png">
                 <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="days" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="hours" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="minutes" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="seconds" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                    </span>
+                    </div>
                 </div>
                 <div class="inset-0 mt-30 flex items-center justify-center absolute">
-                    <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-20 shadow-sm">
+                    <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
                         <p class="font-bold text-sm">Organic Cage Grade A Large Eggs</p>
                         <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                 class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                         <div class="flex items-center justify-between pt-3">
-                            <div class="flex items-center pt-1 gap-2">
+                            <div class="">
                                 <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
                                 <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                             </div>
@@ -282,25 +294,25 @@
                 </div>
             </div>
 
-            <div class="px-2 relative h-[445px]">
-                <img class="w-[380px] h-[335px]" src="assets/baner-6.png">
+            <div class="relative ">
+                <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-6.png">
                 <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="days" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="hours" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="minutes" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="seconds" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                    </span>
+                    </div>
                 </div>
                 <div class="inset-0 mt-30 flex items-center justify-center absolute">
                     <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
@@ -308,7 +320,7 @@
                         <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                 class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                         <div class="flex items-center justify-between pt-3">
-                            <div class="flex items-center pt-1 gap-2">
+                            <div class="">
                                 <span class="font-bold underline text-[18px] text-[#3BB77E]">$51.00</span>
                                 <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$55.00</span>
                             </div>
@@ -321,25 +333,25 @@
                 </div>
             </div>
 
-            <div class="px-2 relative h-[445px]">
-                <img class="w-[380px] h-[335px]" src="assets/baner-7.png">
+            <div class="relative ">
+                <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-7.png">
                 <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
                         <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter2" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter3" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter4" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                    </span>
+                    </div>
                 </div>
                 <div class="inset-0 mt-30 flex items-center justify-center absolute">
                     <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
@@ -347,9 +359,9 @@
                         <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                 class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                         <div class="flex items-center justify-between pt-3">
-                            <div class="flex items-center pt-1 gap-2">
-                                <span class="font-bold underline text-[18px] text-[#3BB77E]">$61.50</span>
-                                <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$66.00</span>
+                            <div class="">
+                                <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
+                                <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                             </div>
                             <div class="flex items-center justify-center">
                                 <button class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
@@ -360,35 +372,35 @@
                 </div>
             </div>
 
-            <div class="px-2 relative h-[445px]">
-                <img class="w-[380px] h-[335px]" src="assets/baner-8.png">
+            <div class="relative">
+                <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-8.png">
                 <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter1" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter2" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter3" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                    </span>
-                    <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                        <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                    </div>
+                    <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                        <div id="counter4" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
                         <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                    </span>
+                    </div>
                 </div>
                 <div class="inset-0 mt-30 flex items-center justify-center absolute">
-                    <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-20 shadow-sm">
+                    <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
                         <p class="font-bold text-sm">Dried fruit: apricots, figs, prunes</p>
                         <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
-                                class="text-sm text-[#3BB77E]">USA Noodle Soup</span></p>
+                                class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                         <div class="flex items-center justify-between pt-3">
-                            <div class="flex items-center pt-1 gap-2">
-                                <span class="font-bold underline text-[18px] text-[#3BB77E]">$56.00</span>
-                                <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$76.00</span>
+                            <div class="">
+                                <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
+                                <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                             </div>
                             <div class="flex items-center justify-center">
                                 <button class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
@@ -401,28 +413,41 @@
         </div>
     </div>
 
-    <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="relative">
-            <img class="w-full rounded-2xl" src="assets/Background-2.png" alt="baner">
-            <div class="absolute inset-0 flex items-center">
-                <div class="p-4 mx-10">
-                    <h2 class="font-bold text-5xl items-center justify-center mb-5">Stay home & get your daily <br>needs from our shop</h2>
-                    <p class="text-[#7E7E7E] text-sm mt-2">Start Your Daily Shopping with Nest Mart</p>
-                    <input class="bg-white rounded-4xl text-sm  px-4 py-2" type="text" placeholder="Your email address">
-                    <button class="bg-green-500 text-white text-sm px-2 py-2 mt-5 rounded-4xl cursor-pointer">Subscribe</button>
+    <div class="mx-auto max-w-7xl px-4 py-6">
+        <div class="relative mt-5">
+            <img class="w-full rounded-2xl object-cover h-[350px]" src="assets/Background-2.png" alt="banner">
+            <div class="absolute inset-0 flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-8">
+                <div class="max-w-xl text-center md:text-left">
+                    <h2 class="font-bold sm:text-3xl lg:text-4xl">
+                        Stay home & get your daily <br class="">
+                        needs from our shop
+                    </h2>
+    
+                    <p class="text-[#7E7E7E] text-sm sm:text-base mt-3">
+                        Start Your Daily Shopping with Nest Mart
+                    </p>
+                    <div class="mt-5 flex flex-col sm:flex-row items-center gap-3">
+                        <input class="bg-white w-full sm:w-auto rounded-full text-sm px-5 py-3 outline-none" type="text"
+                            placeholder="Your email address">
+                        <button
+                            class="bg-green-500 text-white text-sm px-6 py-3 rounded-full cursor-pointer w-full sm:w-auto">
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
-                <img class="inset-0 w-[400px] h-[200px] mt-25" src="assets/sub-background-1.png" alt="">
+                <div class="block">
+                    <img class="w-[400px] mt-30" src="assets/sub-background-1.png" alt="delivery">
+                </div>
+    
             </div>
         </div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="flex items-center justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 items-center justify-between">
 
-            <div class="flex items-center justify-center gap-1 bg-[#F4F6FA] px-4 py-4 rounded-xl">
-                <div class="items-center">
-                    <img class="h-[50px] w-[50px]" src="assets/best-price.svg">
-                </div>
+            <div class="flex items-center justify-center gap-1 bg-[#F4F6FA] px-2 py-4 rounded-xl">
+                <img class="h-12 w-12" src="assets/best-price.svg">
                 <div class="items-center justify-center">
                     <p class="font-semibold text-[16px] px-1">Best prices & offers</p>
                     <p class="text-[#ADADAD] text-[14px]">Orders $50 or more</p>
@@ -430,9 +455,7 @@
             </div>
 
             <div class="flex items-center justify-center gap-1 bg-[#F4F6FA] px-4 py-4 rounded-xl">
-                <div class="flex items-center justify-center">
-                    <img class="h-[50px] w-[50px]" src="assets/freedelivery.svg">
-                </div>
+                <img class="h-12 w-12" src="assets/freedelivery.svg">
                 <div class="items-center justify-center">
                     <p class="font-semibold text-[16px] px-1">Free delivery</p>
                     <p class="text-[#ADADAD] text-[14px]">24/7 amazing services</p>
@@ -440,9 +463,7 @@
             </div>
 
             <div class="flex items-center justify-center gap-1 bg-[#F4F6FA] px-4 py-4 rounded-xl">
-                <div class="flex items-center justify-center">
-                    <img class="h-[50px] w-[50px]" src="assets/dailydeal.svg">
-                </div>
+                <img class="h-12 w-12" src="assets/dailydeal.svg">
                 <div class="items-center justify-center">
                     <p class="font-semibold text-[16px] px-1">Great daily deal</p>
                     <p class="text-[#ADADAD] text-[14px]">When you sign up</p>
@@ -450,9 +471,7 @@
             </div>
 
             <div class="flex items-center justify-center gap-1 bg-[#F4F6FA] px-4 py-4 rounded-xl">
-                <div class="flex items-center justify-center">
-                    <img class="h-[50px] w-[50px]" src="assets/assortment.svg">
-                </div>
+                <img class="h-12 w-12" src="assets/assortment.svg">
                 <div class="items-center justify-center">
                     <p class="font-semibold text-[16px] px-1">Wide assortment</p>
                     <p class="text-[#ADADAD] text-[14px]">Mega Discounts</p>
@@ -460,9 +479,7 @@
             </div>
 
             <div class="flex items-center justify-center gap-3 bg-[#F4F6FA] px-4 py-4 rounded-xl">
-                <div class="flex items-center justify-center">
-                    <img class="h-[50px] w-[50px]" src="assets/return.svg">
-                </div>
+                <img class="h-12 w-12" src="assets/return.svg">
                 <div class="items-center justify-center">
                     <p class="font-semibold text-[16px] px-1">Easy returns</p>
                     <p class="text-[#ADADAD] text-[14px]">Within 30 days</p>
@@ -473,72 +490,72 @@
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="flex items-center justify-between gap-2 py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-2 py-2">
             <div class="items-center justify-center">
-                <img class="mt-5" src="assets/logo.png" alt="Logo">
-                <p class="text-[17px] mt-4 items-center">Awesome grocery store website</p>
-                <p class="">template</p>
-                <p class="flex items-center text-[15px] font-semibold pt-4 gap-1"><span class="items-center"><img src="assets/location.svg"></span>Address<span class="text-[15px] font-medium items-center">5171 W Campbell Ave undefined</span></p>
-                <p class="mx-1">Kent, Utah 53127 United States</p>
-                <p class="flex items-center text-[15px] font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/callus.svg"></span>Call Us<span class="text-[#3BB77E] font-medium text-[15px] items-center">(+91)-540-025-124553</span></p>
-                <p class="flex items-center text-[15px] font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/email.svg"></span>Email<span class="text-[#3BB77E] font-medium text-[15px] items-center">sale@Nest.com</span></p>
-                <p class="flex items-center text-[15px] font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/time.svg"></span>Hours<span class="text-[15px] font-medium items-center">10:00 - 18:00, Mon - Sat</span></p>
+                <img class="mt-5 w-32 h-auto" src="assets/logo.png" alt="Logo">
+                <p class="text-xs mt-4 items-center">Awesome grocery store website template</p>
+                <!-- <p class=""></p> -->
+                <p class="flex items-center text-xs font-semibold pt-4 gap-1"><span class="items-center"><img src="assets/location.svg"></span>Address<span class="text-xs font-medium items-center">5171 W Campbell Ave</span></p>
+                <p class="mx-1 text-xs">Kent, Utah 53127 United States</p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/callus.svg"></span>Call Us<span class="text-[#3BB77E] font-medium text-xs items-center">(+91)-540-025-124553</span></p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/email.svg"></span>Email<span class="text-[#3BB77E] font-medium text-xs items-center">sale@Nest.com</span></p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/time.svg"></span>Hours<span class="text-xs font-medium items-center">10:00 - 18:00, Mon - Sat</span></p>
             </div>
 
             <div class="items-center justify-center">
-                <p class="font-bold items-center text-2xl mt-5">Company</p>
-                <p class="items-center text-[15px] pt-5">About Us</p>
-                <p class="items-center text-[15px] pt-2">Delivery Information</p>
-                <p class="items-center text-[15px] pt-2">Privacy Policy</p>
-                <p class="items-center text-[15px] pt-2">Terms & Conditions</p>
-                <p class="items-center text-[15px] pt-2">Contact Us</p>
-                <p class="items-center text-[15px] pt-2">Support Center</p>
-                <p class="items-center text-[15px] pt-2">Careers</p>
+                <h3 class="font-bold items-center text-xl mt-5">Company</h3>
+                <p class="items-center text-xs pt-5">About Us</p>
+                <p class="items-center text-xs pt-2">Delivery Information</p>
+                <p class="items-center text-xs pt-2">Privacy Policy</p>
+                <p class="items-center text-xs pt-2">Terms & Conditions</p>
+                <p class="items-center text-xs pt-2">Contact Us</p>
+                <p class="items-center text-xs pt-2">Support Center</p>
+                <p class="items-center text-xs pt-2">Careers</p>
             </div>
 
             <div class="items-center justify-center">
-                <p class="font-bold items-center text-2xl mt-5">Account</p>
-                <p class="items-center text-[15px] pt-5">Sign In</p>
-                <p class="items-center text-[15px] pt-2">View Cart</p>
-                <p class="items-center text-[15px] pt-2">My Wishlist</p>
-                <p class="items-center text-[15px] pt-2">Track My Order</p>
-                <p class="items-center text-[15px] pt-2">Help Ticket</p>
-                <p class="items-center text-[15px] pt-2">Shipping Details</p>
-                <p class="items-center text-[15px] pt-2">Compare products</p>
+                <p class="font-bold items-center text-xl mt-5">Account</p>
+                <p class="items-center text-xs pt-5">Sign In</p>
+                <p class="items-center text-xs pt-2">View Cart</p>
+                <p class="items-center text-xs pt-2">My Wishlist</p>
+                <p class="items-center text-xs pt-2">Track My Order</p>
+                <p class="items-center text-xs pt-2">Help Ticket</p>
+                <p class="items-center text-xs pt-2">Shipping Details</p>
+                <p class="items-center text-xs pt-2">Compare products</p>
             </div>
 
             <div class="items-center justify-center">
-                <p class="font-bold items-center text-2xl mt-5">Corporate</p>
-                <p class="items-center text-[15px] pt-5">Become a Vendor</p>
-                <p class="items-center text-[15px] pt-2">Affiliate Program</p>
-                <p class="items-center text-[15px] pt-2">Farm Business</p>
-                <p class="items-center text-[15px] pt-2">Farm Careers</p>
-                <p class="items-center text-[15px] pt-2">Our Suppliers</p>
-                <p class="items-center text-[15px] pt-2">Accessibility</p>
-                <p class="items-center text-[15px] pt-2">Promotions</p>
+                <p class="font-bold items-center text-xl mt-5">Corporate</p>
+                <p class="items-center text-xs pt-5">Become a Vendor</p>
+                <p class="items-center text-xs pt-2">Affiliate Program</p>
+                <p class="items-center text-xs pt-2">Farm Business</p>
+                <p class="items-center text-xs pt-2">Farm Careers</p>
+                <p class="items-center text-xs pt-2">Our Suppliers</p>
+                <p class="items-center text-xs pt-2">Accessibility</p>
+                <p class="items-center text-xs pt-2">Promotions</p>
             </div>
 
             <div class="items-center justify-center">
-                <p class="font-bold items-center text-2xl mt-5">Popular</p>
-                <p class="items-center text-[15px] mt-5">Milk & Flavoured Milk</p>
-                <p class="items-center text-[15px] mt-2">Butter and Margarine</p>
-                <p class="items-center text-[15px] mt-2">Eggs Substitutes</p>
-                <p class="items-center text-[15px] mt-2">Marmalades</p>
-                <p class="items-center text-[15px] mt-2">Sour Cream and Dips</p>
-                <p class="items-center text-[15px] mt-2">Tea & Kombucha</p>
-                <p class="items-center text-[15px] mt-2">Cheese</p>
+                <p class="font-bold items-center text-xl mt-5">Popular</p>
+                <p class="items-center text-xs mt-5">Milk & Flavoured Milk</p>
+                <p class="items-center text-xs mt-2">Butter and Margarine</p>
+                <p class="items-center text-xs mt-2">Eggs Substitutes</p>
+                <p class="items-center text-xs mt-2">Marmalades</p>
+                <p class="items-center text-xs mt-2">Sour Cream and Dips</p>
+                <p class="items-center text-xs mt-2">Tea & Kombucha</p>
+                <p class="items-center text-xs mt-2">Cheese</p>
             </div>
 
             <div class="items-center justify-center">
-                <p class="font-bold items-center text-2xl mt-5">Install App</p>
-                <p class="items-center text-[16px] text-[#7E7E7E] pt-5">From App Store or Google Play</p>
+                <p class="font-bold items-center text-xl mt-5">Install App</p>
+                <p class="items-center text-xs text-[#7E7E7E] pt-5">From App Store or Google Play</p>
                 <div class="flex items-center gap-2 pt-6">
-                    <img src="assets/playstore.svg" alt="playstore">
-                    <img src="assets/appstore.svg" alt="appstore">
+                    <img class="w-25" src="assets/playstore.svg" alt="playstore">
+                    <img class="w-25" src="assets/appstore.svg" alt="appstore">
                 </div>
-                <p class="items-center text-[16px] pt-10">Secured Payment Gateways</p>
+                <p class="items-center text-xs pt-10">Secured Payment Gateways</p>
                 <div class="items-center pt-5">
-                    <img src="assets/payment.svg" alt="payment">
+                    <img class="w-full" src="assets/payment.svg" alt="payment">
                 </div>
             </div>
 
@@ -546,34 +563,34 @@
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="flex items-center justify-between mt-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between mt-4">
             <div class="py-4">
-                <p class="text-[#7E7E7E] text-[16px]">© 2023, Nest – WordPress Ecommerce Template.</p>
-                <p class="text-[#7E7E7E] text-[16px]">All rights reserved</p>
+                <p class="text-[#7E7E7E] text-sm">© 2023, Nest – WordPress Ecommerce Template.</p>
+                <p class="text-[#7E7E7E] text-sm">All rights reserved</p>
             </div>
             <div class="flex items-center gap-1">
                 <img src="assets/phone.svg">
                 <div class="items-center m-0">
-                    <p class="font-bold text-2xl text-[#3BB77E]">1900646666</p>
+                    <p class="font-bold text-xl text-[#3BB77E]">1900646666</p>
                     <p class="text-xs text-[#7E7E7E]">Working 8:00 - 22:00</p>
                 </div>
             </div>
             <div class="flex items-center gap-1">
                 <img src="assets/phone.svg">
                 <div class="items-center m-0">
-                    <p class="font-bold text-2xl text-[#3BB77E]">1900648888</p>
+                    <p class="font-bold text-xl text-[#3BB77E]">1900648888</p>
                     <p class="text-xs text-[#7E7E7E]">24/7 Support Center</p>
                 </div>
             </div>
-            <div>
+            <div class="text-center">
                 <div class="flex items-center justify-end gap-1">
                     <span class="font-bold text-[16px] items-center">Follow Us</span>
-                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="px-1 py-1" src="assets/facebook.svg"></span>
-                    <span class="bg-[#3BB77E] rounded-4xl p-2 items-center"><img class="px-1 py-1" src="assets/twitter.svg"></span>
-                    <span class="bg-[#3BB77E] rounded-4xl p-2 items-center"><img class="px-1 py-1" src="assets/skype.svg"></span>
-                    <span class="bg-[#3BB77E] rounded-4xl p-2 items-center"><img class="px-1 py-1" src="assets/instagram.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/facebook.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/twitter.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/skype.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/instagram.svg"></span>
                 </div>
-                <p class="text-[16px] text-[#7E7E7E]">Up to 15% discount on your first subscribe</p>
+                <p class="text-sm text-[#7E7E7E]">Up to 15% discount on your first subscribe</p>
             </div>
         </div>
     </div>

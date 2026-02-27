@@ -5,9 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Shop</title>
 </head>
 <body>
+    <div id="loader1" class="flex-col gap-4 w-full flex items-center h-screen hidden justify-center">
+        <div
+            class="w-28 h-28 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full">
+            <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" class="animate-ping">
+                <path
+                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 py-4">
+    
+        <div class="flex justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+    
+                <button id="menuBtn" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+    
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+            </div>
+    
+            <div class="flex flex-1 max-w-xl border border-green-500 p-1 rounded-sm overflow-hidden">
+                <input type="text" name="search" class="outline-none flex-1 px-2 py-2" placeholder="Search for products...">
+                <button class="bg-green-500 text-white px-4">Search</button>
+            </div>
+    
+            <div class="flex items-center gap-4">
+                <div class="block border border-[#ECECEC] px-4 py-2 rounded-sm text-green-400 items-center">
+                    Became Vendor ->
+                </div>
+                <div class="text-gray-400 flex items-center gap-1">
+                    <span class="inline"><img src="assets/compare.svg"></span><span class="inline">Compare</span>
+                </div>
+                <div class="text-gray-400 flex items-center gap-1">
+                    <span class="inline"><img src="assets/whishlist.svg"></span><span class="inline">Wishlist</span>
+                </div>
+                <div class="text-gray-400 flex items-center gap-1">
+                    <span class="inline"><img src="assets/cart.svg"></span><span class="inline"><a class="cursor-pointer"
+                            href="cart.html">Cart</a></span>
+                </div>
+                <div class="text-gray-400 flex items-center gap-1">
+                    <span class="inline"><img src="assets/account.svg"></span><span class="inline">Account</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- Navbar -->
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-1">
+                <button class="bg-green-500 border flex gap-1 rounded-sm text-white font-bold px-4 py-2"><span
+                        class="inline"><img class="inline" src="assets/brows-category.svg"></span>Browse All
+                    Categories</button>
+            </div>
+            <div class="flex items-center gap-1">
+                <span class="inline"><img src="assets/hotdeals.svg"></span><span class="font-bold inline">Hot Deals</span>
+            </div>
+    
+            <ul class="flex gap-5 font-bold">
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="index.html">Home</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="about.html">About</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="shopsidebar.html">Shop</a>
+                </li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="#">Vendors</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="#">Mega Menu</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="#">Blog</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="#">Pages</a></li>
+                <li class="cursor-pointer"><a class="cursor-pointer hover:text-[#3BB77E]" href="contact.html">Contact</a>
+                </li>
+            </ul>
+    
+        </div>
+        <div class="flex items-center gap-2">
+            <span><img src="assets/support.svg"></span>
+            <div class="flex flex-col">
+                <span class=" text-green-600 font-bold text-2xl">1900888123</span>
+                <span class="text-xs text-gray-500 font-normal">24/7 Support Center</span>
+            </div>
+        </div>
+    </div>
+
     <div class="mx-auto max-w-7xl px-4 py-4">
 
         <div class="flex gap-1">
@@ -15,7 +103,7 @@
                 <p class="text-sm items-center justify-center">
                     We found 29 items for you!
                 </p>
-                <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 px-2 py-2">
+                <div id="product-list-2" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-2 py-2">
                     <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3">
                         <img class="w-full px-2 py-2 items-center justify-center" src="" alt="Sunset in the mountains">
                         <div class="px-6 py-4">
@@ -42,42 +130,46 @@
                     </div> -->
                 </div>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-2 mt-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 py-2 mt-3">
                 
-                    <div class="px-2 relative">
-                        <img class="w-full h-[335px]" src="assets/baner-5.png">
+                    <div class="relative ">
+                        <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-5.png">
                         <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="days" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="hours" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="minutes" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="seconds" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                            </span>
+                            </div>
                         </div>
                         <div class="inset-0 mt-30 flex items-center justify-center absolute">
-                            <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-20 shadow-sm">
+                            <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
                                 <p class="font-bold text-sm">Organic Cage Grade A Large Eggs</p>
                                 <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                         class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                                 <div class="flex items-center justify-between pt-3">
-                                    <div class="flex items-center pt-1 gap-2">
+                                    <div class="">
                                         <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
                                         <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                                     </div>
                                     <div class="flex items-center justify-center">
                                         <button
-                                            class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
-                                                class="py-1 mx-1"><img src="assets/addcart.svg"></span><span
+                                            class="bg-[#DEF9EC] flex px-2 items-center py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
+                                                class="py-1 mx-1"><img class="h-6" src="assets/addcart.svg"></span><span
                                                 class="mx-1">Add</span></button>
                                     </div>
                                 </div>
@@ -85,25 +177,29 @@
                         </div>
                     </div>
                 
-                    <div class="px-2 relative h-[445px]">
-                        <img class="w-[380px] h-[335px]" src="assets/baner-6.png">
+                    <div class="relative ">
+                        <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-6.png">
                         <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter1" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter2" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter3" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter4" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                            </span>
+                            </div>
                         </div>
                         <div class="inset-0 mt-30 flex items-center justify-center absolute">
                             <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
@@ -111,14 +207,14 @@
                                 <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                         class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                                 <div class="flex items-center justify-between pt-3">
-                                    <div class="flex items-center pt-1 gap-2">
+                                    <div class="">
                                         <span class="font-bold underline text-[18px] text-[#3BB77E]">$51.00</span>
                                         <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$55.00</span>
                                     </div>
                                     <div class="flex items-center justify-center">
                                         <button
-                                            class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
-                                                class="py-1 mx-1"><img src="assets/addcart.svg"></span><span
+                                            class="bg-[#DEF9EC] flex items-center px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
+                                                class="py-1 mx-1"><img class="h-6" src="assets/addcart.svg"></span><span
                                                 class="mx-1">Add</span></button>
                                     </div>
                                 </div>
@@ -126,25 +222,29 @@
                         </div>
                     </div>
                 
-                    <div class="px-2 relative h-[445px]">
-                        <img class="w-[380px] h-[335px]" src="assets/baner-7.png">
+                    <div class="relative ">
+                        <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-7.png">
                         <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter1" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter2" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter3" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter4" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                            </span>
+                            </div>
                         </div>
                         <div class="inset-0 mt-30 flex items-center justify-center absolute">
                             <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
@@ -152,14 +252,14 @@
                                 <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
                                         class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                                 <div class="flex items-center justify-between pt-3">
-                                    <div class="flex items-center pt-1 gap-2">
-                                        <span class="font-bold underline text-[18px] text-[#3BB77E]">$61.50</span>
-                                        <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$66.00</span>
+                                    <div class="">
+                                        <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
+                                        <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                                     </div>
                                     <div class="flex items-center justify-center">
                                         <button
-                                            class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
-                                                class="py-1 mx-1"><img src="assets/addcart.svg"></span><span
+                                            class="bg-[#DEF9EC] flex items-center px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
+                                                class="py-1 mx-1"><img class="h-6" src="assets/addcart.svg"></span><span
                                                 class="mx-1">Add</span></button>
                                     </div>
                                 </div>
@@ -167,67 +267,165 @@
                         </div>
                     </div>
                 
-                    <div class="px-2 relative h-[445px]">
-                        <img class="w-[380px] h-[335px]" src="assets/baner-8.png">
+                    <div class="relative">
+                        <img class="w-full h-74 object-cover rounded-xl" src="assets/baner-8.png">
                         <div class="flex absolute items-center justify-center mb-10 inset-0 gap-1">
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter1" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Days</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter2" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Hours</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter3" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Mins</div>
-                            </span>
-                            <span class="bg-white py-1 w-[50px] h-[60px] rounded-sm shadow-sm">
-                                <div class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00</div>
+                            </div>
+                            <div class="bg-white py-1 px-2 text-center rounded-sm shadow-sm">
+                                <div id="counter4" class="text-[#3BB77E] font-medium items-center text-center text-xl justify-center">00
+                                </div>
                                 <div class="font-semibold items-center justify-center text-center text-sm">Secs</div>
-                            </span>
+                            </div>
                         </div>
                         <div class="inset-0 mt-30 flex items-center justify-center absolute">
-                            <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-20 shadow-sm">
+                            <div class="bg-white rounded-xl px-6 py-6 mx-3 mt-25 shadow-sm">
                                 <p class="font-bold text-sm">Dried fruit: apricots, figs, prunes</p>
                                 <p class="flex items-center gap-1 pt-1"><span class="text-sm text-[#B6B6B6]">By</span><span
-                                        class="text-sm text-[#3BB77E]">USA Noodle Soup</span></p>
+                                        class="text-sm text-[#3BB77E]">Hambger Hel</span></p>
                                 <div class="flex items-center justify-between pt-3">
-                                    <div class="flex items-center pt-1 gap-2">
-                                        <span class="font-bold underline text-[18px] text-[#3BB77E]">$56.00</span>
-                                        <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$76.00</span>
+                                    <div class="">
+                                        <span class="font-bold underline text-[18px] text-[#3BB77E]">$21.00</span>
+                                        <span class="font-semibold  text-[13px] text-[#ADADAD] line-through">$24.00</span>
                                     </div>
                                     <div class="flex items-center justify-center">
-                                        <button class="bg-[#DEF9EC] flex px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
-                                                class="py-1 mx-1"><img src="assets/addcart.svg"></span><span class="mx-1">Add</span></button>
+                                        <button
+                                            class="bg-[#DEF9EC] flex items-center px-2 py-1 rounded-sm font-bold text-[#3BB77E] cursor-pointer"><span
+                                                class="py-1 mx-1"><img class="h-6" src="assets/addcart.svg"></span><span
+                                                class="mx-1">Add</span></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="border border-[#ECECEC] rounded-xl p-4">
-                <h1 class="font-bold text-xl mt-5">Category</h1>
+            <div class="w-[400px] h-full border border-[#ECECEC] rounded-xl p-4">
+                <h1 class="font-bold text-xl mt-5 border-b-2 border-b-[#ECECEC] py-3">Category</h1>
                 <div id="category-list-1" class="">
-                    <h2 class="text-sm border border-[#F2F3F4] px-4 py-2 mt-3 rounded-sm">Milks&Dairies</h2>
-                    <h2 class="text-sm border border-[#F2F3F4] px-4 py-2 mt-3 rounded-sm">Milks&Dairies</h2>
+                    <!-- <h2 class="text-sm border border-[#F2F3F4] px-4 py-2 mt-3 rounded-sm">Milks&Dairies</h2>
+                    <h2 class="text-sm border border-[#F2F3F4] px-4 py-2 mt-3 rounded-sm">Milks&Dairies</h2> -->
                 </div>
             </div>
         </div>
     </div>
     
     <div class="mx-auto max-w-7xl px-4 py-4">
-        <div class="relative">
-            <img class="w-full rounded-2xl" src="assets/Background-2.png" alt="baner">
-            <div class="absolute inset-0 flex items-center">
-                <div class="p-4 mx-10">
-                    <h2 class="font-bold text-5xl items-center justify-center mb-5">Stay home & get your daily <br>needs from our shop</h2>
-                    <p class="text-[#7E7E7E] text-sm mt-2">Start Your Daily Shopping with Nest Mart</p>
-                    <input class="bg-white rounded-4xl text-sm  px-4 py-2" type="text" placeholder="Your email address">
-                    <button class="bg-green-500 text-white text-sm px-2 py-2 mt-5 rounded-4xl cursor-pointer">Subscribe</button>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-2 py-2">
+            <div class="items-center justify-center">
+                <img class="mt-5 w-32 h-auto" src="assets/logo.png" alt="Logo">
+                <p class="text-xs mt-4 items-center">Awesome grocery store website template</p>
+                <!-- <p class=""></p> -->
+                <p class="flex items-center text-xs font-semibold pt-4 gap-1"><span class="items-center"><img src="assets/location.svg"></span>Address<span class="text-xs font-medium items-center">5171 W Campbell Ave</span></p>
+                <p class="mx-1 text-xs">Kent, Utah 53127 United States</p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/callus.svg"></span>Call Us<span class="text-[#3BB77E] font-medium text-xs items-center">(+91)-540-025-124553</span></p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/email.svg"></span>Email<span class="text-[#3BB77E] font-medium text-xs items-center">sale@Nest.com</span></p>
+                <p class="flex items-center text-xs font-semibold pt-2 gap-1"><span class="items-center"><img src="assets/time.svg"></span>Hours<span class="text-xs font-medium items-center">10:00 - 18:00, Mon - Sat</span></p>
+            </div>
+
+            <div class="items-center justify-center">
+                <h3 class="font-bold items-center text-xl mt-5">Company</h3>
+                <p class="items-center text-xs pt-5">About Us</p>
+                <p class="items-center text-xs pt-2">Delivery Information</p>
+                <p class="items-center text-xs pt-2">Privacy Policy</p>
+                <p class="items-center text-xs pt-2">Terms & Conditions</p>
+                <p class="items-center text-xs pt-2">Contact Us</p>
+                <p class="items-center text-xs pt-2">Support Center</p>
+                <p class="items-center text-xs pt-2">Careers</p>
+            </div>
+
+            <div class="items-center justify-center">
+                <p class="font-bold items-center text-xl mt-5">Account</p>
+                <p class="items-center text-xs pt-5">Sign In</p>
+                <p class="items-center text-xs pt-2">View Cart</p>
+                <p class="items-center text-xs pt-2">My Wishlist</p>
+                <p class="items-center text-xs pt-2">Track My Order</p>
+                <p class="items-center text-xs pt-2">Help Ticket</p>
+                <p class="items-center text-xs pt-2">Shipping Details</p>
+                <p class="items-center text-xs pt-2">Compare products</p>
+            </div>
+
+            <div class="items-center justify-center">
+                <p class="font-bold items-center text-xl mt-5">Corporate</p>
+                <p class="items-center text-xs pt-5">Become a Vendor</p>
+                <p class="items-center text-xs pt-2">Affiliate Program</p>
+                <p class="items-center text-xs pt-2">Farm Business</p>
+                <p class="items-center text-xs pt-2">Farm Careers</p>
+                <p class="items-center text-xs pt-2">Our Suppliers</p>
+                <p class="items-center text-xs pt-2">Accessibility</p>
+                <p class="items-center text-xs pt-2">Promotions</p>
+            </div>
+
+            <div class="items-center justify-center">
+                <p class="font-bold items-center text-xl mt-5">Popular</p>
+                <p class="items-center text-xs mt-5">Milk & Flavoured Milk</p>
+                <p class="items-center text-xs mt-2">Butter and Margarine</p>
+                <p class="items-center text-xs mt-2">Eggs Substitutes</p>
+                <p class="items-center text-xs mt-2">Marmalades</p>
+                <p class="items-center text-xs mt-2">Sour Cream and Dips</p>
+                <p class="items-center text-xs mt-2">Tea & Kombucha</p>
+                <p class="items-center text-xs mt-2">Cheese</p>
+            </div>
+
+            <div class="items-center justify-center">
+                <p class="font-bold items-center text-xl mt-5">Install App</p>
+                <p class="items-center text-xs text-[#7E7E7E] pt-5">From App Store or Google Play</p>
+                <div class="flex items-center gap-2 pt-6">
+                    <img class="w-25" src="assets/playstore.svg" alt="playstore">
+                    <img class="w-25" src="assets/appstore.svg" alt="appstore">
                 </div>
-                <img class="inset-0 w-[400px] h-[200px] mt-25" src="assets/sub-background-1.png" alt="">
+                <p class="items-center text-xs pt-10">Secured Payment Gateways</p>
+                <div class="items-center pt-5">
+                    <img class="w-full" src="assets/payment.svg" alt="payment">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 py-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between mt-4">
+            <div class="py-4">
+                <p class="text-[#7E7E7E] text-sm">© 2023, Nest – WordPress Ecommerce Template.</p>
+                <p class="text-[#7E7E7E] text-sm">All rights reserved</p>
+            </div>
+            <div class="flex items-center gap-1">
+                <img src="assets/phone.svg">
+                <div class="items-center m-0">
+                    <p class="font-bold text-xl text-[#3BB77E]">1900646666</p>
+                    <p class="text-xs text-[#7E7E7E]">Working 8:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-1">
+                <img src="assets/phone.svg">
+                <div class="items-center m-0">
+                    <p class="font-bold text-xl text-[#3BB77E]">1900648888</p>
+                    <p class="text-xs text-[#7E7E7E]">24/7 Support Center</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex items-center justify-end gap-1">
+                    <span class="font-bold text-[16px] items-center">Follow Us</span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/facebook.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/twitter.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/skype.svg"></span>
+                    <span class="bg-[#3BB77E] rounded-full p-2 items-center"><img class="w-4 h-4" src="assets/instagram.svg"></span>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">Up to 15% discount on your first subscribe</p>
             </div>
         </div>
     </div>

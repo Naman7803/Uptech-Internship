@@ -611,76 +611,76 @@ function hideloader1(){
 
 // counter animation
 
-// let upto = 0;
-// let counts = setInterval(updated, 300);
+let upto = 0;
+let counts = setInterval(updated, 300);
 
-// function updated() {
-//     let aboutcounter1 = document.getElementById("about-counter1");
-//     aboutcounter1.innerHTML = ++upto;
-//     if (upto === 10) {
-//         clearInterval(counts);
-//     }
-//     let aboutcounter2 = document.getElementById("about-counter2");
-//     aboutcounter2.innerHTML = ++upto;
-//     if (upto === 1000) {
-//         clearInterval(counts);
-//     }
-//     let aboutcounter3 = document.getElementById("about-counter3");
-//     aboutcounter3.innerHTML = ++upto;
-//     if (upto === 50) {
-//         clearInterval(counts);
-//     }
-//     let aboutcounter4 = document.getElementById("about-counter4");
-//     aboutcounter4.innerHTML = ++upto;
-//     if (upto === 100) {
-//         clearInterval(counts);
-//     }
-//     let aboutcounter5 = document.getElementById("about-counter5");
-//     aboutcounter5.innerHTML = ++upto;
-//     if (upto === 60) {
-//         clearInterval(counts);
-//     }
-// }
-
-
+function updated() {
+    let aboutcounter1 = document.getElementById("about-counter1");
+    aboutcounter1.innerHTML = ++upto;
+    if (upto === 10) {
+        clearInterval(counts);
+    }
+    let aboutcounter2 = document.getElementById("about-counter2");
+    aboutcounter2.innerHTML = ++upto;
+    if (upto === 1000) {
+        clearInterval(counts);
+    }
+    let aboutcounter3 = document.getElementById("about-counter3");
+    aboutcounter3.innerHTML = ++upto;
+    if (upto === 50) {
+        clearInterval(counts);
+    }
+    let aboutcounter4 = document.getElementById("about-counter4");
+    aboutcounter4.innerHTML = ++upto;
+    if (upto === 100) {
+        clearInterval(counts);
+    }
+    let aboutcounter5 = document.getElementById("about-counter5");
+    aboutcounter5.innerHTML = ++upto;
+    if (upto === 60) {
+        clearInterval(counts);
+    }
+}
 
 
 
 
 
-// function countertimer() {
-//     // Getting formated date from date string
-//     let deadline = new Date("feb 28, 2026 15:37:25").getTime();
 
-//     // Calling defined function at certain interval
-//     let x = setInterval(function () {
-//         // Getting current date and time in required format
-//         let now = new Date().getTime();
 
-//         // Calculating difference
-//         let t = deadline - now;
+function countertimer() {
+    // Getting formated date from date string
+    let deadline = new Date("march 30, 2026 15:37:25").getTime();
 
-//         // Getting values of days,hours,minutes, seconds
-//         let days = Math.floor(t / (1000 * 60 * 60 * 24));
-//         let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//         let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-//         let seconds = Math.floor((t % (1000 * 60)) / 1000);
+    // Calling defined function at certain interval
+    let x = setInterval(function () {
+        // Getting current date and time in required format
+        let now = new Date().getTime();
 
-//         // Show the output time
-//         document.getElementById("days").innerHTML = days;
-//         document.getElementById("hours").innerHTML = hours;
-//         document.getElementById("minutes").innerHTML = minutes;
-//         document.getElementById("seconds").innerHTML = seconds;
+        // Calculating difference
+        let t = deadline - now;
 
-//         // Show overtime output
-//         if (t < 0) {
-//             clearInterval(x);
-//             document.getElementById("demo").innerHTML = "TIME UP";
-//             document.getElementById("day").innerHTML = "0";
-//             document.getElementById("hour").innerHTML = "0";
-//             document.getElementById("minute").innerHTML = "0";
-//             document.getElementById("second").innerHTML = "0";
-//         }
-//     }, 1000);
-// }
-// countertimer()
+        // Getting values of days,hours,minutes, seconds
+        let days = Math.floor(t / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((t % (1000 * 60)) / 1000);
+
+        // Show the output time
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // Show overtime output
+        if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "TIME UP";
+            document.getElementById("day").innerHTML = "0";
+            document.getElementById("hour").innerHTML = "0";
+            document.getElementById("minute").innerHTML = "0";
+            document.getElementById("second").innerHTML = "0";
+        }
+    }, 1000);
+}
+countertimer()

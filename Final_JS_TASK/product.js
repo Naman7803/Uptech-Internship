@@ -23,6 +23,7 @@ async function getProduct() {
         console.log(data)
         // window.allProducts = data;
         console.log(id)
+    
         // productview.innerHTML = data.map(d =>(
         productview.innerHTML =
             `<div class="max-w-sm border border-[#ECECEC] rounded-xl">
@@ -45,7 +46,7 @@ async function getProduct() {
                                     class="text-[#7E7E7E] text-xs">${data.weight}</span></p>
                             <div class="flex items-center gap-2 mt-5">
                                 <input id="product-qty" type="number" class="outline-2 outline-[#3BB77E] rounded-sm px-2 py-2">
-                                <button onclick="addtocart(${data.id})"
+                                <button onclick='addtocart(${toAttr(data)})'
                                     class="bg-[#3BB77E] justify-center items-center px-2 py-2.5 flex rounded-sm font-bold text-white cursor-pointer">
                                     <span class="py-1 mx-1"><img src="assets/addtocart.svg"></span><span class="mx-1 text-sm">Add to
                                         cart</span></button>

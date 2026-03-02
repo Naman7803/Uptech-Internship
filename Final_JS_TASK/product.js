@@ -21,6 +21,7 @@ async function getProduct() {
         // console.log(data)
         // const products=data;
         console.log(data)
+        // window.allProducts = data;
         console.log(id)
         // productview.innerHTML = data.map(d =>(
         productview.innerHTML =

@@ -34,7 +34,7 @@ categoryListData()
 
 document.addEventListener("DOMContentLoaded", () => {
     productListData();
-    productListData2()
+    productListData2()  
     displaycart()
 });
 
@@ -207,6 +207,7 @@ async function productListData2() {
         console.log(data)
         const products=data.products;
         console.log(products)
+        window.allProducts = products;
         productList2.innerHTML=products.map(d =>(
             `<div class="max-w-sm rounded-xl overflow-hidden mx-1 mt-5 border-[#ECECEC] border">
                 <img onclick="getProductId(${d.id})" class="w-full h-40 px-2 py-2 items-center justify-center" src="${d.images[0]}" alt="img">
@@ -285,8 +286,8 @@ function addtocart(productid){
     const product = window.allProducts.find(p => p.id === productid);
     const exist=cart.find(i => i.id===product.id);
     console.log(productid)
-    let quantity;
     const productqty=document.getElementById('product-qty');
+    let quantity;
     // console.log(productqty.value)
     if(quantity<1){
         // alert('Enter valid number')
@@ -485,6 +486,7 @@ async function getcategoryitem() {
             console.log(data) 
             products=data.products;
             console.log(products)
+            window.allProducts = products;
         } else {
             const response = await fetch(`https://dummyjson.com/products`);
             if (!response.ok) {
@@ -493,7 +495,8 @@ async function getcategoryitem() {
             const data=await response.json();
             console.log(data) 
             products=data.products;
-            console.log(products)   
+            console.log(products)  
+            window.allProducts = products; 
         }
         // const response = await fetch(`https://dummyjson.com/products/category/${slug}`);
 
